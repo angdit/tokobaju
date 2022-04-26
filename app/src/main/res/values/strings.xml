@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">tokobaju</string>
+    <string name="welcome">WELCOME</string>
+    <string name="login">LOGIN</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="sign_in">Sign In</string>
+    <string name="belum_punya_akun">Belum punya Akun?</string>
+    <string name="daftar_di_sini">Daftar di Sini</string>
+    <string name="title_activity_main">MainActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="register">REGISTER</string>
+    <string name="nama">Nama</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="masuk_di_sini">Masuk di Sini</string>
+    <string name="sudah_punya_akun">Sudah punya Akun?</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="log_out">Log Out</string>
+    <string name="hello">Hello</string>
+    <string name="angga">Angga</string>
+    <string name="search_here">Search here</string>
+    <string name="lacoste">Lacoste</string>
+    <string name="thrasher">Thrasher</string>
+    <string name="nike">Nike</string>
+    <string name="vans">Vans</string>
+    <string name="home">Home</string>
+    <string name="basket">Basket</string>
+    <string name="account">Account</string>
+    <string name="nama_produk">NAMA PRODUK</string>
+    <string name="lacoste_27_cotton_t_shirt">Lacoste 27 Cotton T-Shirt</string>
+    <string name="rp_1_099_000">Rp 1.099.000</string>
+    <string name="add_to_chart">Add to Chart</string>
+    <string name="lacoste27_t_shirt">Lacoste27 T-Shirt</string>
+    <string name="produk">PRODUK</string>
+    <string name="backarrow">backarrow</string>
+    <string name="detail_produk">detail produk</string>
+    <string name="productimage">ProductImage</string>
+</resources>
