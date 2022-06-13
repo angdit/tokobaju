@@ -2,8 +2,10 @@
 <resources>
     <array name="preloaded_fonts" translatable="false">
         <item>@font/acme</item>
+        <item>@font/alfa_slab_one</item>
         <item>@font/anton</item>
         <item>@font/baloo</item>
+        <item>@font/baloo_tamma</item>
         <item>@font/candal</item>
     </array>
 </resources>

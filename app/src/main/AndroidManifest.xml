@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.tokobaju">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,6 +11,33 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Tokobaju">
+        <activity
+            android:name=".checkoutsukses"
+            android:exported="false" />
+        <activity
+            android:name=".akundetail"
+            android:exported="false" />
+        <activity
+            android:name=".SplashScreen"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ActivityKeranjang"
+            android:exported="false" />
+        <activity
+            android:name=".all_categories4"
+            android:exported="false" />
+        <activity
+            android:name=".all_categories3"
+            android:exported="false" />
+        <activity
+            android:name=".all_categories2"
+            android:exported="false" />
         <activity
             android:name=".DetailProduk"
             android:exported="false" />
@@ -23,13 +52,7 @@
             android:exported="false" />
         <activity
             android:name=".LoginActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:exported="false" />
 
         <meta-data
             android:name="preloaded_fonts"

@@ -4,14 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
+    android:background="@color/snow"
     tools:context=".DetailProduk">
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:scrollbars="none"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -20,33 +19,59 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
+            <LinearLayout
+                android:id="@+id/layoutBack"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/dashboard_header"
+                android:paddingHorizontal="10dp"
+                android:paddingTop="20dp"
+                android:paddingBottom="35dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="UseCompoundDrawables">
+
+                <ImageView
+                    android:id="@+id/backcategories"
+                    android:layout_width="38dp"
+                    android:layout_height="38dp"
+                    android:layout_gravity="left"
+                    android:contentDescription="@string/backarrow"
+                    android:src="@drawable/ic_arrow_back"
+                    app:tint="@color/white"
+                    tools:ignore="RtlHardcoded,RedundantDescriptionCheck" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="38dp"
+                    android:fontFamily="@font/baloo"
+                    android:gravity="center"
+                    android:text="DETAIL PRODUK"
+                    android:textColor="@color/white"
+                    android:textSize="25sp" />
+            </LinearLayout>
+
             <FrameLayout
                 android:id="@+id/productImageLayout"
                 android:layout_width="match_parent"
-                android:layout_height="350dp"
-                android:background="@color/white"
+                android:layout_height="200dp"
+                android:layout_below="@+id/layoutBack"
+                android:background="@color/snow"
                 android:elevation="4dp"
                 android:visibility="visible">
+
 
                 <ImageView
                     android:id="@+id/productImage"
                     android:layout_width="200dp"
                     android:layout_height="200dp"
                     android:layout_gravity="center"
-                    android:background="@drawable/lacoste2"
+                    android:background="@drawable/lacoste1"
                     tools:ignore="ContentDescription" />
-
-                <ImageView
-                    android:id="@+id/back"
-                    android:layout_width="38dp"
-                    android:layout_height="38dp"
-                    android:layout_gravity="left"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginTop="20dp"
-                    android:elevation="4dp"
-                    android:src="@drawable/ic_arrow_back"
-                    app:tint="@color/black"
-                    tools:ignore="ContentDescription,RtlHardcoded" />
 
             </FrameLayout>
 
@@ -54,9 +79,9 @@
                 android:id="@+id/productDetail"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="#fff"
-                android:gravity="center"
                 android:layout_below="@+id/productImageLayout"
+                android:background="#f5f5f5"
+                android:gravity="center"
                 android:orientation="horizontal"
                 android:padding="16dp"
                 android:visibility="visible">
@@ -66,7 +91,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:background="#fff"
+                    android:background="#f5f5f5"
                     android:orientation="vertical"
                     android:padding="16dp">
 
@@ -78,9 +103,11 @@
                         android:text="@string/nama_produk"
                         android:textColor="@color/black"
                         android:textSize="20sp"
+                        android:textStyle="bold"
                         tools:ignore="NestedWeights,RtlHardcoded" />
 
                     <TextView
+                        android:id="@+id/productNama"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="6dp"
@@ -94,14 +121,35 @@
                 </LinearLayout>
 
                 <TextView
+                    android:id="@+id/productHarga"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:gravity="right"
-                    android:text="@string/rp_1_099_000"
+                    android:text="Rp 1.099.000"
                     android:textColor="@color/custom_text"
                     android:textSize="18sp"
+                    android:textStyle="bold"
                     tools:ignore="RtlHardcoded" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/produkdesk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="5dp"
+                android:layout_below="@+id/productDetail"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/deskripsiproduk"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/upgrade_your_basics_with_a_t_shirt_made_for_year_round_use_crafted_to_offer_various_looks_and_styles_the_27_coll_tee_is_designed_with_a_crew_neckline_short_sleeves_and_block_colour_throughout_finished_with_a_large_chest_design_presenting_the_brand_name_and_the_iconic_lacoste_crocodile_illustration_pair_with_jeans_and_an_unbuttoned_white_shirt_or_go_casual_in_this_and_some_linen_shorts"
+                    android:textColor="@color/black" />
 
             </LinearLayout>
 
@@ -109,8 +157,8 @@
                 android:id="@+id/rating"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/productDetail"
-                android:background="#fff"
+                android:layout_below="@id/produkdesk"
+                android:background="#f5f5f5"
                 android:gravity="center"
                 android:orientation="horizontal"
                 android:padding="16dp"
@@ -121,39 +169,45 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
+                    android:isIndicator="false"
                     android:progressBackgroundTint="#808080"
-                    android:progressTint="@color/custom_button"
-                    android:secondaryProgressTint="@color/black"
-                    android:isIndicator="false" />
+                    android:progressTint="#d4af37"
+                    android:secondaryProgressTint="@color/black" />
 
             </LinearLayout>
 
-            <LinearLayout
-                android:id="@+id/save"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/rating"
-                android:layout_marginVertical="16dp"
-                android:background="@color/white"
-                android:orientation="vertical">
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:background="@color/custom_button"
-                    android:elevation="3dp"
-                    android:gravity="center"
-                    android:paddingHorizontal="90dp"
-                    android:paddingVertical="12dp"
-                    android:text="@string/add_to_chart"
-                    android:textColor="@color/white"
-                    android:textSize="15sp" />
-
-            </LinearLayout>
 
         </RelativeLayout>
 
     </ScrollView>
 
+    <LinearLayout
+        android:id="@+id/save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        android:layout_marginVertical="16dp"
+        android:background="@color/snow"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/buttonchart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/backgroundbutton"
+            android:contentDescription="@string/t_shirt_lacoste27"
+            android:elevation="3dp"
+            android:gravity="center"
+            android:onClick="addToCart"
+            android:paddingHorizontal="90dp"
+            android:paddingVertical="12dp"
+            android:text="@string/add_to_chart"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            tools:ignore="UsingOnClickInXml" />
+
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

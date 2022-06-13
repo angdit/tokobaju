@@ -4,9 +4,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".AllCategories"
+    tools:context=".all_categories3"
     android:background="@color/snow">
-
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -15,9 +14,9 @@
 
         <LinearLayout
             android:id="@+id/layoutBack"
-            android:background="@drawable/dashboard_header"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@drawable/dashboard_header"
             android:paddingTop="20dp"
             android:paddingBottom="35dp"
             android:paddingHorizontal="10dp"
@@ -45,11 +44,10 @@
                 android:layout_marginEnd="38dp"
                 android:fontFamily="@font/baloo"
                 android:gravity="center"
-                android:text="@string/produk_lacoste"
+                android:text="@string/produk_vans1"
                 android:textColor="@color/white"
                 android:textSize="25sp" />
         </LinearLayout>
-
 
         <RelativeLayout
             android:id="@+id/produk1"
@@ -59,12 +57,11 @@
             android:layout_margin="20dp">
 
             <TextView
-                android:id="@+id/namalacoste1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/acme"
                 android:padding="25dp"
-                android:text="@string/lacoste27_t_shirt"
+                android:text="@string/vans_eco_shirt"
                 android:textColor="@color/black"
                 android:textSize="20sp"
                 tools:ignore="RelativeOverlap" />
@@ -80,7 +77,6 @@
                 android:textColor="@color/black" />
 
             <ImageView
-                android:id="@+id/lacoste1"
                 android:layout_width="150dp"
                 android:layout_height="150dp"
                 android:layout_alignParentEnd="true"
@@ -89,13 +85,12 @@
                 android:layout_marginEnd="10dp"
                 android:layout_marginBottom="10dp"
                 android:contentDescription="@string/productimage"
-                android:src="@drawable/lacoste1" />
+                android:src="@drawable/vans2" />
 
 
         </RelativeLayout>
 
         <RelativeLayout
-            android:id="@+id/produk2"
             android:layout_width="match_parent"
             android:layout_height="150dp"
             android:layout_margin="20dp"
@@ -103,12 +98,11 @@
 
 
             <TextView
-                android:id="@+id/namalacoste2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/acme"
                 android:padding="25dp"
-                android:text="@string/lacoste_crewneck"
+                android:text="@string/vans_desert_hoodie"
                 android:textColor="@color/black"
                 android:textSize="20sp"
                 tools:ignore="RelativeOverlap" />
@@ -124,7 +118,6 @@
                 android:textColor="@color/black" />
 
             <ImageView
-                android:id="@+id/lacoste2"
                 android:layout_width="150dp"
                 android:layout_height="150dp"
                 android:layout_alignParentEnd="true"
@@ -133,24 +126,22 @@
                 android:layout_marginEnd="10dp"
                 android:layout_marginBottom="10dp"
                 android:contentDescription="@string/productimage"
-                android:src="@drawable/lacoste2" />
+                android:src="@drawable/vans3" />
 
         </RelativeLayout>
 
         <RelativeLayout
-            android:id="@+id/produk3"
             android:layout_width="match_parent"
             android:layout_height="150dp"
             android:layout_margin="20dp"
             android:background="@drawable/background1">
 
             <TextView
-                android:id="@+id/namalacoste3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/acme"
                 android:padding="25dp"
-                android:text="@string/lacoste_poloshirt"
+                android:text="@string/vans_gallery_t_shirt"
                 android:textColor="@color/black"
                 android:textSize="20sp"
                 tools:ignore="RelativeOverlap" />
@@ -166,7 +157,6 @@
                 android:textColor="@color/black" />
 
             <ImageView
-                android:id="@+id/lacoste3"
                 android:layout_width="150dp"
                 android:layout_height="150dp"
                 android:layout_alignParentEnd="true"
@@ -175,24 +165,22 @@
                 android:layout_marginEnd="10dp"
                 android:layout_marginBottom="10dp"
                 android:contentDescription="@string/productimage"
-                android:src="@drawable/lacoste3" />
+                android:src="@drawable/vans4" />
 
         </RelativeLayout>
 
         <RelativeLayout
-            android:id="@+id/produk4"
             android:layout_width="match_parent"
             android:layout_height="150dp"
             android:layout_margin="20dp"
             android:background="@drawable/background1">
 
             <TextView
-                android:id="@+id/namalacoste4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/acme"
                 android:padding="25dp"
-                android:text="@string/lacoste_x_mc_hood"
+                android:text="@string/vans_jacket"
                 android:textColor="@color/black"
                 android:textSize="20sp"
                 tools:ignore="RelativeOverlap" />
@@ -208,7 +196,6 @@
                 android:textColor="@color/black" />
 
             <ImageView
-                android:id="@+id/lacoste4"
                 android:layout_width="150dp"
                 android:layout_height="150dp"
                 android:layout_alignParentEnd="true"
@@ -217,7 +204,7 @@
                 android:layout_marginEnd="10dp"
                 android:layout_marginBottom="10dp"
                 android:contentDescription="@string/productimage"
-                android:src="@drawable/lacoste4" />
+                android:src="@drawable/vans5" />
 
         </RelativeLayout>
 
